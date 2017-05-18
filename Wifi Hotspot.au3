@@ -47,6 +47,7 @@ Func main()
 			   GUICtrlSetData($conectionProgressBar, 0)
 			Else
 			   RunWait(@ComSpec & " /c " & "netsh wlan set hostednetwork mode=allow ssid="& GUICtrlRead($nameInput) & " key=" & GuiCtrlRead($passwordInput) & " keyUsage=persistent", @TempDir, @SW_HIDE)
+			   RunWait(@ComSpec & " /c " & "netsh wlan start host", @TempDir, @SW_HIDE)
 			   MsgBox(0, "Success", "Network started!")
 			EndIf
 		 Case $stopButton
