@@ -1,2 +1,2 @@
 # Hotspot
-Setup wizzard to create a wifi hotspot
+A GUI to create a wifi hotspot
